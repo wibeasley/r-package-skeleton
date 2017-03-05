@@ -74,3 +74,107 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
     All the real work is here. Pull the finished features in to the master branch with Pull Requests.
 
     Any changes that happen in the master, away from the dev, use [rebase](https://help.github.com/articles/about-git-rebase/) to update dev.
+
+1. **Establish repo-wide config files**
+
+    Copy and adapt from https://github.com/OuhscBbmc/referral-exposure/.
+
+    - [ ] `DESCRIPTION`
+    - [ ] `README.md` with badges and installation instructions
+    - [ ] `.gitignore`
+    - [ ] `.gitattributes`
+    - [ ] `.Rbuildignore`
+    - [ ] code of conduct https://help.github.com/articles/adding-a-code-of-conduct-to-your-project/
+    - [ ] license (eg, GPL)
+    - [ ] Verify it passes a local "build" (ctrl+shift+B)
+    - [ ] Verify it passes a local "check" (ctrl+shift+E)
+    - [ ] Thin out the dependencies & suggests you won't be using soon
+
+1. **Establish first unit tests**
+
+    For automated testing on Travis (#2) and AppVeyor (#3).  Adapt from https://github.com/OuhscBbmc/referral-exposure/tree/master/tests.
+
+    - [ ] Create `./tests/test-all.R`
+
+        ```r
+        #Modeled after the R6 testing structure: https://github.com/wch/R6/blob/master/tests/testthat.R
+        library(testthat)
+        library(ReferralExposure)
+
+        testthat::test_check("ReferralExposure")
+        ```        
+
+    - [ ] Create `.tests/testhat/rest-basic.R`
+
+        ```r
+        library(testthat)
+        context("Basic Functions")
+
+        test_that("smoke-test", {
+          returned <- basic(3)
+          expect_true(!is.null(returned))
+        })
+
+        test_that("vector-test", {
+          expected <- 4:7
+          returned <- basic(3:6)
+          expect_equal(returned, expected)
+        })
+        ```
+
+    - [ ] Verify that this fails your local check (because we haven't yet created the function `basic()`).
+
+1. **Establish first function**
+
+    Create `.R/basic.R`
+
+    ```r
+    #' Short title
+    #'
+    #' Longer sentence description
+    #'
+    #' @param a integer.  Required
+    #' @export
+    #' @importFrom magrittr %>%
+    #' @md
+    #'
+    basic <- function( a ) {
+      b <- a + 1
+
+      return( b )
+    }
+    ```
+
+1. **Package-wide documentation**
+
+    Assume your username is 'uuu'.  Assume your package name is 'ppp'.  Create
+
+    ```r
+    #' @docType package
+    #' @name ppp-package
+    #' @aliases ppp
+    #'
+    #' @title Short-book-title
+    #'
+    #' @description
+    #' The description should be a longer complete sentence.
+    #'
+    #' TODO: consider adding links to your project's funders.
+    #'
+    #' @note
+    #' The most recent development version is available through [GitHub](https://github.com/uuu/ppp) by
+    #' running.
+    #'
+    #' `devtools::install_github('uuu/ppp')`
+    #' (make sure [devtools](https://cran.r-project.org/package=devtools) is already installed).
+    #' If you're having trouble with the package, please install the development version.  If this doesn't solve
+    #' your problem, please create a [new issue](https://github.com/uuu/ppp/issues), or email uuu.
+    #'
+    #' @examples
+    #' \dontrun{
+    #' # Install/update ReferralExposure with the development version from GitHub
+    #' #install.packages('devtools') #Uncomment if `devtools` isn't installed already.
+    #' devtools::install_github('uuu/ppp')
+    #' }
+    NULL
+    ```
