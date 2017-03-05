@@ -12,6 +12,7 @@ Prereqs:
 Copy & paste each item into a new issue.  Each should be assigned to the "package skeleton" milestone.
 
 1. **Establish Rproj file**
+
     It's important to set good build/check defaults. Copy from https://github.com/OuhscBbmc/referral-exposure/blob/master/referral-exposure.Rproj
 
 1. **Establish Travis-CI**
@@ -49,11 +50,13 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
     * https://github.com/krlmlr/r-appveyor
 
 1. **Establish GitHub "topics"**
+
     Add `r`, `r-package`, and whatever is relevant to your content.
 
     https://github.com/blog/2309-introducing-topics
 
 1. **Establish dev branch**
+
     All the real work is here. Pull the finished features in to the master branch with Pull Requests.
 
     Any changes that happen in the master, away from the dev, use [rebase](https://help.github.com/articles/about-git-rebase/) to update dev.
