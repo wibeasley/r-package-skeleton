@@ -3,12 +3,18 @@ Initializing Package
 
 Recommended steps for creating an R package, almost regardless of its content.  The list below is roughly a copy-and-paste list into new Issues in your GitHub repository.
 
-Prereqs:
+### Prerequisites:
 * Create a free personal [GitHub account](https://github.com/join).
 * *Optional*: Enable [two-factor authentication](https://help.github.com/articles/about-two-factor-authentication/).
 * Create a public [GitHub repository](https://help.github.com/articles/create-a-repo/).
 * Create a [GitHub milestone](https://help.github.com/articles/creating-and-editing-milestones-for-issues-and-pull-requests/) called "package skeleton".  Example: https://github.com/cibsr/stanirs/milestone/1
+* Install 'RTools' if it's not already installed.
+    * Windows: https://cran.r-project.org/bin/windows/Rtools/.
+    * Linux (make sure you have `r-base-dev`): http://www.jason-french.com/blog/2013/03/11/installing-r-in-linux/.
+    * OSX (maybe): http://r.research.att.com/.
+* Install RStudio Desktop: https://www.rstudio.com/products/rstudio/download/.
 
+### Issues
 Copy & paste each item into a new issue.  Each should be assigned to the "package skeleton" milestone.
 
 1. **Establish Rproj file**
@@ -77,7 +83,7 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
 
 1. **Establish dev branch**
 
-    All the real work is here. Pull the finished features in to the master branch with Pull Requests.
+    All the real work should be committed to this development branch. Pull the finished features in to the master branch with Pull Requests.
 
     Any changes that happen in the master, away from the dev, use [rebase](https://help.github.com/articles/about-git-rebase/) to update dev.
 
