@@ -47,3 +47,8 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
     * AppVeyor can to a lot of things beyond this simple scenario.  There's a lot to read.
     * https://www.appveyor.com/docs/
     * https://github.com/krlmlr/r-appveyor
+
+1. **Establish GitHub "topics"**
+    Add `r`, `r-package`, and whatever is relevant to your content.
+
+    https://github.com/blog/2309-introducing-topics
