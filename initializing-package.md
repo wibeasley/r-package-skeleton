@@ -89,3 +89,37 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
     - [ ] Verify it passes a local "build" (ctrl+shift+B)
     - [ ] Verify it passes a local "check" (ctrl+shift+E)
     - [ ] Thin out the dependencies & suggests you won't be using soon
+
+1. **Establish first unit tests**
+
+    For automated testing on Travis (#2) and AppVeyor (#3).  Adapt from https://github.com/OuhscBbmc/referral-exposure/tree/master/tests.
+
+    - [ ] Create `./tests/test-all.R`
+
+        ```r
+        #Modeled after the R6 testing structure: https://github.com/wch/R6/blob/master/tests/testthat.R
+        library(testthat)
+        library(ReferralExposure)
+
+        testthat::test_check("ReferralExposure")
+        ```        
+
+    - [ ] Create `.tests/testhat/rest-basic.R`
+
+        ```r
+        library(testthat)
+        context("Basic Functions")
+
+        test_that("smoke-test", {
+          returned <- basic(3)
+          expect_true(!is.null(returned))
+        })
+
+        test_that("vector-test", {
+          expected <- 4:7
+          returned <- basic(3:6)
+          expect_equal(returned, expected)
+        })
+        ```
+
+    - [ ] Verify that this fails your local check (because we haven't yet created the function `basic()`).
