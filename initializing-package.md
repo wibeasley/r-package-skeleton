@@ -144,3 +144,37 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
       return( b )
     }
     ```
+
+1. **Package-wide documentation**
+
+    Assume your username is 'uuu'.  Assume your package name is 'ppp'.  Create
+
+    ```r
+    #' @docType package
+    #' @name ppp-package
+    #' @aliases ppp
+    #'
+    #' @title Short-book-title
+    #'
+    #' @description
+    #' The description should be a longer complete sentence.
+    #'
+    #' TODO: consider adding links to your project's funders.
+    #'
+    #' @note
+    #' The most recent development version is available through [GitHub](https://github.com/uuu/ppp) by
+    #' running.
+    #'
+    #' `devtools::install_github('uuu/ppp')`
+    #' (make sure [devtools](https://cran.r-project.org/package=devtools) is already installed).
+    #' If you're having trouble with the package, please install the development version.  If this doesn't solve
+    #' your problem, please create a [new issue](https://github.com/uuu/ppp/issues), or email uuu.
+    #'
+    #' @examples
+    #' \dontrun{
+    #' # Install/update ReferralExposure with the development version from GitHub
+    #' #install.packages('devtools') #Uncomment if `devtools` isn't installed already.
+    #' devtools::install_github('uuu/ppp')
+    #' }
+    NULL
+    ```
