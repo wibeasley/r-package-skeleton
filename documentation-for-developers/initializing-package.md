@@ -63,6 +63,12 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
     install.packages("magrittr")
     ```
 
+1. **Branching Demo**
+
+    This isn't a real issue for the package.  It's a placeholder for the SCUG meeting.  While the Travis & AppVeyor environments are building & caching, we'll spend ~15 minutes covering branching/forking, merging, and rebasing.
+
+    See https://github.com/wibeasley/class-branching.
+
 1. **Establish GitHub "topics"**
 
     Add `r`, `r-package`, and whatever is relevant to your content.
@@ -94,7 +100,7 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
 
     For automated testing on Travis (#2) and AppVeyor (#3).  Adapt from https://github.com/OuhscBbmc/referral-exposure/tree/master/tests.
 
-    - [ ] Create `./tests/test-all.R`
+    - [ ] Create `./tests/test-all.R`.  Make sure there's an empty last line (not even a space or tab).
 
         ```r
         #Modeled after the R6 testing structure: https://github.com/wch/R6/blob/master/tests/testthat.R
@@ -102,9 +108,10 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
         library(ReferralExposure)
 
         testthat::test_check("ReferralExposure")
+
         ```        
 
-    - [ ] Create `.tests/testhat/rest-basic.R`
+    - [ ] Create `.tests/testhat/rest-basic.R`.  Make sure there's an empty last line (not even a space or tab).
 
         ```r
         library(testthat)
@@ -120,13 +127,14 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
           returned <- basic(3:6)
           expect_equal(returned, expected)
         })
+
         ```
 
     - [ ] Verify that this fails your local check (because we haven't yet created the function `basic()`).
 
 1. **Establish first function**
 
-    Create `.R/basic.R`
+    Create `.R/basic.R`.  Make sure there's an empty last line (not even a space or tab).
 
     ```r
     #' Short title
@@ -143,11 +151,12 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
 
       return( b )
     }
+
     ```
 
 1. **Package-wide documentation**
 
-    Assume your username is 'uuu'.  Assume your package name is 'ppp'.  Create
+    Assume your username is 'uuu'.  Assume your package name is 'ppp'.  Create `./R/ppp-package.R`.  Make sure there's an empty last line (not even a space or tab).
 
     ```r
     #' @docType package
