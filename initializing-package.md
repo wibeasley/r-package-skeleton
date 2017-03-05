@@ -49,6 +49,20 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
     * https://www.appveyor.com/docs/
     * https://github.com/krlmlr/r-appveyor
 
+1.  **Install Package-Creation Packages**
+    * [`devtools`](https://CRAN.R-project.org/package=devtools)
+        * [`testthat`](https://CRAN.R-project.org/package=testthat) --for testing
+        * [`knitr`](https://CRAN.R-project.org/package=knitr)  --for vignettes
+        * [`roxygen2`](https://CRAN.R-project.org/package=roxygen2)  --for easier documentation creation & maintenance
+        * [`covr`](https://CRAN.R-project.org/package=covr)  --for code coverage
+
+    * [`magrittr`](https://CRAN.R-project.org/package=magrittr)  --for piping
+
+    ```r
+    install.packages("devtools", dependencies=TRUE)
+    install.packages("magrittr")
+    ```
+
 1. **Establish GitHub "topics"**
 
     Add `r`, `r-package`, and whatever is relevant to your content.
