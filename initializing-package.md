@@ -74,3 +74,18 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
     All the real work is here. Pull the finished features in to the master branch with Pull Requests.
 
     Any changes that happen in the master, away from the dev, use [rebase](https://help.github.com/articles/about-git-rebase/) to update dev.
+
+1. **Establish repo-wide config files**
+
+    Copy and adapt from https://github.com/OuhscBbmc/referral-exposure/.
+
+    - [ ] `DESCRIPTION`
+    - [ ] `README.md` with badges and installation instructions
+    - [ ] `.gitignore`
+    - [ ] `.gitattributes`
+    - [ ] `.Rbuildignore`
+    - [ ] code of conduct https://help.github.com/articles/adding-a-code-of-conduct-to-your-project/
+    - [ ] license (eg, GPL)
+    - [ ] Verify it passes a local "build" (ctrl+shift+B)
+    - [ ] Verify it passes a local "check" (ctrl+shift+E)
+    - [ ] Thin out the dependencies & suggests you won't be using soon
