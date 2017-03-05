@@ -123,3 +123,24 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
         ```
 
     - [ ] Verify that this fails your local check (because we haven't yet created the function `basic()`).
+
+1. **Establish first function**
+
+    Create `.R/basic.R`
+
+    ```r
+    #' Short title
+    #'
+    #' Longer sentence description
+    #'
+    #' @param a integer.  Required
+    #' @export
+    #' @importFrom magrittr %>%
+    #' @md
+    #'
+    basic <- function( a ) {
+      b <- a + 1
+
+      return( b )
+    }
+    ```
