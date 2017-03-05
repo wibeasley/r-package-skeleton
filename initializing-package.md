@@ -10,3 +10,6 @@ Prereqs:
 * Create a [GitHub milestone](https://help.github.com/articles/creating-and-editing-milestones-for-issues-and-pull-requests/) called "package skeleton".  Example: https://github.com/cibsr/stanirs/milestone/1
 
 Copy & paste each item into a new issue.  Each should be assigned to the "package skeleton" milestone.
+
+1. **Establish Rproj file**
+    It's important to set good build/check defaults. Copy from https://github.com/OuhscBbmc/referral-exposure/blob/master/referral-exposure.Rproj
