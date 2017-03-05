@@ -13,6 +13,7 @@ Recommended steps for creating an R package, almost regardless of its content.  
     * Linux (make sure you have `r-base-dev`): http://www.jason-french.com/blog/2013/03/11/installing-r-in-linux/.
     * OSX (maybe): http://r.research.att.com/.
 * Install RStudio Desktop: https://www.rstudio.com/products/rstudio/download/.
+* Install GitHub Desktop (for Windows & OSX): https://desktop.github.com/
 
 ### Issues
 Copy & paste each item into a new issue.  Each should be assigned to the "package skeleton" milestone.
