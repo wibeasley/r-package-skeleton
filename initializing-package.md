@@ -52,3 +52,8 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
     Add `r`, `r-package`, and whatever is relevant to your content.
 
     https://github.com/blog/2309-introducing-topics
+
+1. **Establish dev branch**
+    All the real work is here. Pull the finished features in to the master branch with Pull Requests.
+
+    Any changes that happen in the master, away from the dev, use [rebase](https://help.github.com/articles/about-git-rebase/) to update dev.
