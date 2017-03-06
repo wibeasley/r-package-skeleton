@@ -209,6 +209,7 @@ After the package structure has been initialized, attendees will add functions t
 **Optional Topics**
 
 1. Providing support to users with reasonable boundaries.
+1. Code coverage with [covr](https://github.com/jimhester/covr).  (Example with [REDCapR](https://coveralls.io/github/OuhscBbmc/REDCapR) package.
 1. "Releases" and versioning.
 1. Creating helpful documentation that minimizes maintenance.
 1. Supplementing documentation with vignettes.
