@@ -1,7 +1,7 @@
 Initializing Package
 =============================================
 
-Recommended steps for creating an R package, almost regardless of its content.  The list below is roughly a copy-and-paste list into new Issues in your GitHub repository.
+Recommended steps for creating an R package, almost regardless of its content.  The list below is roughly a copy-and-paste list into new Issues in your GitHub repository.  This curriculum was developed by [Will Beasley](https://github.com/wibeasley) and [Andrey Koval](https://github.com/andkov) to serve the workshops for [OU SCUG](https://github.com/OuhscBbmc/StatisticalComputing) and [Stanford's CIBSR](https://github.com/cibsr).
 
 ### Prerequisites:
 * Create a free personal [GitHub account](https://github.com/join).
@@ -194,3 +194,31 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
     #' }
     NULL
     ```
+
+Next Steps
+=======================
+After the package structure has been initialized, attendees will add functions to their own packages.  So please come with ideas for recurring challenges/tasks faced in your personal research.  Depending on attendees' interests, we can discuss:
+
+**Important Topics**
+
+1. Identifying which parts of your research challenges/tasks can be cast as a problem for a common tool/function.
+1. Strategies for coding these common tasks.
+1. Approaches to testing the reusable functions with an automated test suite that runs at every checkpoint of development.
+1. Making the reusable functions robust to corner cases and input you haven't anticipated.
+
+**Optional Topics**
+
+1. Providing support to users with reasonable boundaries.
+1. "Releases" and versioning.
+1. Creating helpful documentation that minimizes maintenance.
+1. Supplementing documentation with vignettes.
+1. Online documentation with [RDocumentation.org](http://rdocumentation.org/) and [pkgdown](https://github.com/hadley/pkgdown)
+1. Using repositories to supplement publications.
+1. Archiving repositories with [Zenodo](https://guides.github.com/activities/citable-code/).
+1. Tradeoffs of [deploying your package to CRAN](https://cran.r-project.org/web/packages/available_packages_by_name.html).
+
+Further Reading
+=======================
+* Wickham, Hadley (2015). *R Packages*.  http://r-pkgs.had.co.nz/
+* R Core (2017). *Writing R Extensions*. https://cran.r-project.org/doc/manuals/r-release/R-exts.html
+* R Core (2017). *CRAN Repository Policy*. https://cran.r-project.org/web/packages/policies.html
