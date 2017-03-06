@@ -205,6 +205,7 @@ After the package structure has been initialized, attendees will add functions t
 1. Strategies for coding these common tasks.
 1. Approaches to testing the reusable functions with an automated test suite that runs at every checkpoint of development.
 1. Making the reusable functions robust to corner cases and input you haven't anticipated.
+1. Adding internal and external data sets
 
 **Optional Topics**
 
