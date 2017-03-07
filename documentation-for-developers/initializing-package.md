@@ -266,7 +266,9 @@ After the package structure has been initialized, attendees will add functions t
 1. Strategies for coding these common tasks.
 1. Approaches to testing the reusable functions with an automated test suite that runs at every checkpoint of development.
 1. Making the reusable functions robust to corner cases and input you haven't anticipated.
-1. Adding internal and external data sets
+1. Adding internal and external data sets.
+    * rda files in `data/`
+    * csv files in `inst/extdata/`
 
 **Optional Topics**
 
@@ -276,7 +278,7 @@ After the package structure has been initialized, attendees will add functions t
 1. Supplementing documentation with vignettes.
 1. Online documentation with [RDocumentation.org](http://rdocumentation.org/) and [pkgdown](https://github.com/hadley/pkgdown)
 1. Using repositories to supplement publications.
-1. Archiving repositories with [Zenodo](https://guides.github.com/activities/citable-code/).
+1. Assigning a DOI to repository with [Zenodo](https://guides.github.com/activities/citable-code/).  Benefits of archiving by a 3rd party.
 1. Tradeoffs of [deploying your package to CRAN](https://cran.r-project.org/web/packages/available_packages_by_name.html).
 
 Further Reading
