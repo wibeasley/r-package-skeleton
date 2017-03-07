@@ -13,6 +13,13 @@ Recommended steps for creating an R package, almost regardless of its content.  
     * Linux (make sure you have `r-base-dev`): http://www.jason-french.com/blog/2013/03/11/installing-r-in-linux/.
     * OSX (maybe): http://r.research.att.com/.
 * Install RStudio Desktop: https://www.rstudio.com/products/rstudio/download/.
+* Install R packages (from within the RStudio 'Console').  The [`magrittr`](https://CRAN.R-project.org/package=magrittr) package is for piping.  The  [`devtools`](https://CRAN.R-project.org/package=devtools) package makes package development much easier; its dependencies include [`testthat`](https://CRAN.R-project.org/package=testthat) (for testing),  [`knitr`](https://CRAN.R-project.org/package=knitr) (for vignettes, and other reporting), [`roxygen2`](https://CRAN.R-project.org/package=roxygen2) (for easier documentation creation & maintenance), and [`covr`](https://CRAN.R-project.org/package=covr) (for code coverage).
+
+    ```r
+install.packages("devtools", dependencies=TRUE)
+install.packages("magrittr")
+    ```
+
 * Install GitHub Desktop (for Windows & OSX): https://desktop.github.com/
 
 ### Issues
@@ -55,20 +62,6 @@ Further details:
 * AppVeyor can to a lot of things beyond this simple scenario.  There's a lot to read.
 * https://www.appveyor.com/docs/
 * https://github.com/krlmlr/r-appveyor
-
-##### Install Package-Creation Packages
-* [`devtools`](https://CRAN.R-project.org/package=devtools)
-    * [`testthat`](https://CRAN.R-project.org/package=testthat) --for testing
-    * [`knitr`](https://CRAN.R-project.org/package=knitr)  --for vignettes
-    * [`roxygen2`](https://CRAN.R-project.org/package=roxygen2)  --for easier documentation creation & maintenance
-    * [`covr`](https://CRAN.R-project.org/package=covr)  --for code coverage
-
-* [`magrittr`](https://CRAN.R-project.org/package=magrittr)  --for piping
-
-```r
-install.packages("devtools", dependencies=TRUE)
-install.packages("magrittr")
-```
 
 ##### Branching Demo
 
