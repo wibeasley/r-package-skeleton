@@ -24,7 +24,9 @@ install.packages("magrittr")
 * Install GitHub Desktop (for Windows & OSX): https://desktop.github.com/
 
 ## Issues
-Copy & paste each item into a new issue.  Each should be assigned to the "package skeleton" milestone.
+Copy & paste each item into a new issue.  Each should be assigned to the "package skeleton" milestone.  
+
+As this document grows older, some things may get out of date; R evolves, CRAN policies catch more mistakes, and coding styles change.  Look at live packages for reference too.  [ReferralExposure](https://github.com/OuhscBbmc/referral-exposure/) might continue to be a simple project of ours, while [REDCapR](https://github.com/OuhscBbmc/REDCapR/) has more complicated dependencies, and hopefully should be maintained for many years.  Of course, look at examples from [Hadley](https://github.com/hadley) and [tidyverse](https://github.com/tidyverse), though their C code requires much more complexity than your first package will.
 
 #### Establish Rproj file
 
