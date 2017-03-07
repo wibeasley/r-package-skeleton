@@ -1,0 +1,13 @@
+# Travis's native R Image (http://docs.travis-ci.com/user/languages/r/)
+language: r
+sudo: false
+cache: packages
+warnings_are_errors: true
+r:
+  - release
+#  - devel
+r_github_packages:
+  - jimhester/covr
+# - hadley/testthat
+after_success:
+  - Rscript -e 'library(covr);coveralls()'
