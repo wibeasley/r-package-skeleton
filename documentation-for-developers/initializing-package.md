@@ -280,6 +280,8 @@ After the package structure has been initialized, attendees will add functions t
 1. Using repositories to supplement publications.
 1. Assigning a DOI to repository with [Zenodo](https://guides.github.com/activities/citable-code/).  Benefits of archiving by a 3rd party.
 1. Tradeoffs of [deploying your package to CRAN](https://cran.r-project.org/web/packages/available_packages_by_name.html).
+    * Explanatory notes to CRAN maintainers with `cran-comments.md`.
+    * `devtools_build_win(version="R-devel")` is similar to AppVeyor and Travis, but maintained
 
 Further Reading
 =======================
