@@ -6,7 +6,7 @@ Recommended steps for creating an R package, almost regardless of its content.  
 ## Prerequisites:
 * Create a free personal [GitHub account](https://github.com/join).
 * *Optional*: Enable [two-factor authentication](https://help.github.com/articles/about-two-factor-authentication/).
-* Create a public [GitHub repository](https://help.github.com/articles/create-a-repo/).
+* Create a public [GitHub repository](https://help.github.com/articles/create-a-repo/).  The name is case-sensitive, and cannot have spaces, dashes, or [even underscores](http://stackoverflow.com/questions/24201568/whats-a-good-r-package-name).
 * Create a [GitHub milestone](https://help.github.com/articles/creating-and-editing-milestones-for-issues-and-pull-requests/) called "package skeleton".  Example: https://github.com/cibsr/stanirs/milestone/1
 * Install 'RTools' if it's not already installed.
     * Windows: https://cran.r-project.org/bin/windows/Rtools/.
@@ -26,7 +26,75 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
 
 #### Establish Rproj file
 
-It's important to set good build/check defaults. Copy from https://github.com/OuhscBbmc/referral-exposure/blob/master/referral-exposure.Rproj
+It's important to set good build/check defaults. Copy from https://github.com/OuhscBbmc/referral-exposure/blob/master/referral-exposure.Rproj.  In the repo's root directory, create a plain text file; the name should match the repo, and have the extension 'Rproj' (case-sensitive).
+
+
+```
+Version: 1.0
+
+RestoreWorkspace: No
+SaveWorkspace: No
+AlwaysSaveHistory: No
+
+EnableCodeIndexing: Yes
+UseSpacesForTab: Yes
+NumSpacesForTab: 2
+Encoding: UTF-8
+
+RnwWeave: knitr
+LaTeX: pdfLaTeX
+
+AutoAppendNewline: Yes
+StripTrailingWhitespace: Yes
+
+BuildType: Package
+PackageUseDevtools: Yes
+PackageInstallArgs: --no-multiarch --with-keep.source
+PackageRoxygenize: rd,collate,namespace
+
+```
+
+Alternatively, run `devtools::use_rstudio()`, and add the extra fields.
+
+#### Establish DESCRIPTION file
+
+This is the most important file of the package structure.  
+
+- [ ] Create a plain-text file called `DESCRIPTION` (without any extension) in the repo's root directory.  Ideally, the Package name (in the first field) should match the repo's name.
+
+```
+Package: ReferralExposure
+Title: Calculating exposure over multiple referrals
+Description: Reusable functions for calculating exposure during repeated spans.
+Version: 0.0.1.9000
+Date: 2017-02-21
+Authors@R: c(person("Will", "Beasley", role = c("aut", "cre"), email =
+    "wibeasley@hotmail.com"), person("David", "Bard", role = "ctb"))
+URL: https://github.com/OuhscBbmc/referral-exposure, http://ouhsc.edu/bbmc/
+BugReports: https://github.com/OuhscBbmc/referral-exposure/issues
+Depends:
+    R(>= 3.0.0),
+    stats
+Imports:
+    methods,
+    magrittr
+Suggests:
+    devtools,
+    knitr,
+    rmarkdown,
+    testthat (>= 0.9)
+License: MIT + file LICENSE
+LazyData: TRUE
+RoxygenNote: 6.0.1
+Roxygen: list(markdown = TRUE)
+
+```
+
+Alternatively, run `devtools::create_description()`, and add the extra fields.
+
+- [ ] Verify the package successfully 'Builds' (ctrl+shift+B in RStudio).
+- [ ] Verify the package passes the 'Check' (ctrl+shift+E in RStudio).
+
 
 #### Establish Travis-CI
 
@@ -84,7 +152,6 @@ Any changes that happen in the master, away from the dev, use [rebase](https://h
 
 Copy and adapt from https://github.com/OuhscBbmc/referral-exposure/.
 
-- [ ] `DESCRIPTION`
 - [ ] `README.md` with badges and installation instructions
 - [ ] `.gitignore`
 - [ ] `.gitattributes`
