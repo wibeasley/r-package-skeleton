@@ -18,11 +18,11 @@ Recommended steps for creating an R package, almost regardless of its content.  
 ### Issues
 Copy & paste each item into a new issue.  Each should be assigned to the "package skeleton" milestone.
 
-1. **Establish Rproj file**
+##### Establish Rproj file
 
     It's important to set good build/check defaults. Copy from https://github.com/OuhscBbmc/referral-exposure/blob/master/referral-exposure.Rproj
 
-1. **Establish Travis-CI**
+##### Establish Travis-CI
 
     Travis-CI tests your package on different Linux environments.  It starts with a new environment/machine every build, so it flushes out deployment problems that may not manifest on your development machine.
 
@@ -39,7 +39,7 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
       * https://travis-ci.org/getting_started
       * https://docs.travis-ci.com/user/languages/r/
 
-1. **Establish AppVeyor** *Optional*
+##### Establish AppVeyor *Optional*
 
     AppVeyor tests your package on different Windows environments.  It starts with a new environment/machine every build, so it flushes out deployment problems that may not manifest on your development machine.
 
@@ -56,7 +56,7 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
     * https://www.appveyor.com/docs/
     * https://github.com/krlmlr/r-appveyor
 
-1.  **Install Package-Creation Packages**
+##### Install Package-Creation Packages
     * [`devtools`](https://CRAN.R-project.org/package=devtools)
         * [`testthat`](https://CRAN.R-project.org/package=testthat) --for testing
         * [`knitr`](https://CRAN.R-project.org/package=knitr)  --for vignettes
@@ -70,25 +70,25 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
     install.packages("magrittr")
     ```
 
-1. **Branching Demo**
+##### Branching Demo
 
     This isn't a real issue for the package.  It's a placeholder for the SCUG meeting.  While the Travis & AppVeyor environments are building & caching, we'll spend ~15 minutes covering branching/forking, merging, and rebasing.
 
     See https://github.com/wibeasley/class-branching.
 
-1. **Establish GitHub "topics"**
+##### Establish GitHub "topics"
 
     Add `r`, `r-package`, and whatever is relevant to your content.
 
     https://github.com/blog/2309-introducing-topics
 
-1. **Establish dev branch**
+##### Establish dev branch
 
     All the real work should be committed to this development branch. Pull the finished features in to the master branch with Pull Requests.
 
     Any changes that happen in the master, away from the dev, use [rebase](https://help.github.com/articles/about-git-rebase/) to update dev.
 
-1. **Establish repo-wide config files**
+##### Establish repo-wide config files
 
     Copy and adapt from https://github.com/OuhscBbmc/referral-exposure/.
 
@@ -103,7 +103,7 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
     - [ ] Verify it passes a local "check" (ctrl+shift+E)
     - [ ] Thin out the dependencies & suggests you won't be using soon
 
-1. **Establish first unit tests**
+##### Establish first unit tests
 
     For automated testing on Travis (#2) and AppVeyor (#3).  Adapt from https://github.com/OuhscBbmc/referral-exposure/tree/master/tests.
 
@@ -116,7 +116,7 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
 
         testthat::test_check("ReferralExposure")
 
-        ```        
+        ```
 
     - [ ] Create `.tests/testhat/rest-basic.R`.  Make sure there's an empty last line (not even a space or tab).
 
@@ -139,7 +139,7 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
 
     - [ ] Verify that this fails your local check (because we haven't yet created the function `basic()`).
 
-1. **Establish first function**
+##### Establish first function
 
     Create `.R/basic.R`.  Make sure there's an empty last line (not even a space or tab).
 
@@ -161,7 +161,7 @@ Copy & paste each item into a new issue.  Each should be assigned to the "packag
 
     ```
 
-1. **Package-wide documentation**
+##### Package-wide documentation
 
     Assume your username is 'uuu'.  Assume your package name is 'ppp'.  Create `./R/ppp-package.R`.  Make sure there's an empty last line (not even a space or tab).
 
