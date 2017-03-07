@@ -3,7 +3,7 @@ Initializing Package
 
 Recommended steps for creating an R package, almost regardless of its content.  The list below is roughly a copy-and-paste list into new Issues in your GitHub repository.  This curriculum was developed by [Will Beasley](https://github.com/wibeasley) and [Andrey Koval](https://github.com/andkov) to serve the workshops for [OU SCUG](https://github.com/OuhscBbmc/StatisticalComputing) and [Stanford's CIBSR](https://github.com/cibsr).
 
-### Prerequisites:
+## Prerequisites:
 * Create a free personal [GitHub account](https://github.com/join).
 * *Optional*: Enable [two-factor authentication](https://help.github.com/articles/about-two-factor-authentication/).
 * Create a public [GitHub repository](https://help.github.com/articles/create-a-repo/).
@@ -19,17 +19,16 @@ Recommended steps for creating an R package, almost regardless of its content.  
 install.packages("devtools", dependencies=TRUE)
 install.packages("magrittr")
     ```
-
 * Install GitHub Desktop (for Windows & OSX): https://desktop.github.com/
 
-### Issues
+## Issues
 Copy & paste each item into a new issue.  Each should be assigned to the "package skeleton" milestone.
 
-##### Establish Rproj file
+#### Establish Rproj file
 
 It's important to set good build/check defaults. Copy from https://github.com/OuhscBbmc/referral-exposure/blob/master/referral-exposure.Rproj
 
-##### Establish Travis-CI
+#### Establish Travis-CI
 
 Travis-CI tests your package on different Linux environments.  It starts with a new environment/machine every build, so it flushes out deployment problems that may not manifest on your development machine.
 
@@ -46,7 +45,7 @@ Further details:
 * https://travis-ci.org/getting_started
 * https://docs.travis-ci.com/user/languages/r/
 
-##### Establish AppVeyor *Optional*
+#### Establish AppVeyor *Optional*
 
 AppVeyor tests your package on different Windows environments.  It starts with a new environment/machine every build, so it flushes out deployment problems that may not manifest on your development machine.
 
@@ -63,25 +62,25 @@ Further details:
 * https://www.appveyor.com/docs/
 * https://github.com/krlmlr/r-appveyor
 
-##### Branching Demo
+#### Branching Demo
 
 This isn't a real issue for the package.  It's a placeholder for the SCUG meeting.  While the Travis & AppVeyor environments are building & caching, we'll spend ~15 minutes covering branching/forking, merging, and rebasing.
 
 See https://github.com/wibeasley/class-branching.
 
-##### Establish GitHub "topics"
+#### Establish GitHub "topics"
 
 Add `r`, `r-package`, and whatever is relevant to your content.
 
 https://github.com/blog/2309-introducing-topics
 
-##### Establish dev branch
+#### Establish dev branch
 
 All the real work should be committed to this development branch. Pull the finished features in to the master branch with Pull Requests.
 
 Any changes that happen in the master, away from the dev, use [rebase](https://help.github.com/articles/about-git-rebase/) to update dev.
 
-##### Establish repo-wide config files
+#### Establish repo-wide config files
 
 Copy and adapt from https://github.com/OuhscBbmc/referral-exposure/.
 
@@ -96,7 +95,7 @@ Copy and adapt from https://github.com/OuhscBbmc/referral-exposure/.
 - [ ] Verify it passes a local "check" (ctrl+shift+E)
 - [ ] Thin out the dependencies & suggests you won't be using soon
 
-##### Establish first unit tests
+#### Establish first unit tests
 
 For automated testing on Travis (#2) and AppVeyor (#3).  Adapt from https://github.com/OuhscBbmc/referral-exposure/tree/master/tests.
 
@@ -132,7 +131,7 @@ For automated testing on Travis (#2) and AppVeyor (#3).  Adapt from https://gith
 
 - [ ] Verify that this fails your local check (because we haven't yet created the function `basic()`).
 
-##### Establish first function
+#### Establish first function
 
 Create `.R/basic.R`.  Make sure there's an empty last line (not even a space or tab).
 
@@ -154,7 +153,7 @@ basic <- function( a ) {
 
 ```
 
-##### Package-wide documentation
+#### Package-wide documentation
 
 Assume your username is 'uuu'.  Assume your package name is 'ppp'.  Create `./R/ppp-package.R`.  Make sure there's an empty last line (not even a space or tab).
 
