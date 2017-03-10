@@ -127,7 +127,7 @@ AppVeyor tests your package on different Windows environments.  It starts with a
 Further details:
 * The first test will take AppVeyor a long time (but not as long as Travis) because it's caching a lot of the environment setup.  Once cached, a minimal package will take just a few minutes each push.
 * Only the last commit of a push is tested.
-* AppVeyor can to a lot of things beyond this simple scenario.  There's a lot to read.
+* AppVeyor can do a lot of things beyond this simple scenario.  There's a lot to read.
     * https://www.appveyor.com/docs/
     * https://github.com/krlmlr/r-appveyor
 * Alternatively, use `devtools::use_appveyor()` and complete the extra fields.
