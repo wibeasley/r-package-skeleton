@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/wibeasley/r-package-skeleton.svg?branch=master)](https://travis-ci.org/wibeasley/r-package-skeleton)
+
 # r-package-skeleton
 
 This is for a SCUG class scheduled for two 1-hour SCUG meetings.
