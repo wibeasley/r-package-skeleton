@@ -2,7 +2,7 @@
 
 # r-package-skeleton
 
-This is for a SCUG class scheduled for two 1-hour SCUG meetings.
+This is for a 2017 SCUG class scheduled for two 1-hour SCUG meetings.
 
 
 Creating a minimal R package: initializing package skeleton
