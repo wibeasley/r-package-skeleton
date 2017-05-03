@@ -1,2 +1,13 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^\.gitignore$
+^\.travis.yml$
+^appveyor\.yml$
+
+^cran-comments\.md$
+README.html$
+
+documentation-peek.pdf
+documentation-for-developers/
+playgrounds/
+utility/
