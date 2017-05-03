@@ -109,7 +109,7 @@ Travis-CI tests your package on different Linux environments.  It starts with a 
 Further details:
 * The first test will take Travis a long time (maybe 20 min?) because it's caching a lot of the environment setup.  Once cached, a minimal package will take just a few minutes each push.
 * Only the last commit of a push is tested.
-* Travis-CI can to a lot of things beyond this simple scenario.  There's a lot to read.
+* Travis-CI can do a lot of things beyond this simple scenario.  There's a lot to read.
     * https://travis-ci.org/getting_started
     * https://docs.travis-ci.com/user/languages/r/
 * Alternatively, use `devtools::use_travis()` and complete the extra fields.
@@ -127,7 +127,7 @@ AppVeyor tests your package on different Windows environments.  It starts with a
 Further details:
 * The first test will take AppVeyor a long time (but not as long as Travis) because it's caching a lot of the environment setup.  Once cached, a minimal package will take just a few minutes each push.
 * Only the last commit of a push is tested.
-* AppVeyor can to a lot of things beyond this simple scenario.  There's a lot to read.
+* AppVeyor can do a lot of things beyond this simple scenario.  There's a lot to read.
     * https://www.appveyor.com/docs/
     * https://github.com/krlmlr/r-appveyor
 * Alternatively, use `devtools::use_appveyor()` and complete the extra fields.
