@@ -5,9 +5,8 @@
 #' @param a first integer
 #' @param b second integer
 
-integer_addition <- function(a,b)
+integer_addition <- function( a, b )
 {
-  c <- a+b
-  return(c)
-
+  c <- a + b
+  return( c )
 }

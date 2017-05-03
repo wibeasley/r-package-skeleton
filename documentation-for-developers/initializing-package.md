@@ -273,6 +273,7 @@ After the package structure has been initialized, attendees will add functions t
 **Optional Topics**
 
 1. Providing support to users with reasonable boundaries.
+1. Code coverage with [covr](https://github.com/jimhester/covr).  (Example with [REDCapR](https://coveralls.io/github/OuhscBbmc/REDCapR) package.
 1. "Releases" and versioning.
 1. Creating helpful documentation that minimizes maintenance.
 1. Supplementing documentation with vignettes.
@@ -283,8 +284,15 @@ After the package structure has been initialized, attendees will add functions t
     * Explanatory notes to CRAN maintainers with `cran-comments.md`.
     * `devtools_build_win(version="R-devel")` is similar to AppVeyor and Travis, but maintained
 
-Further Reading
+Further Reading & References
 =======================
 * Wickham, Hadley (2015). *R Packages*.  http://r-pkgs.had.co.nz/
 * R Core (2017). *Writing R Extensions*. https://cran.r-project.org/doc/manuals/r-release/R-exts.html
 * R Core (2017). *CRAN Repository Policy*. https://cran.r-project.org/web/packages/policies.html
+* Stack Overflow with tags `[r]`, `[package]`, and/or `[devtools]`: http://stackoverflow.com/search?q=devtools+r
+    * SO posting guide: http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example
+* `R-package-devel` mailing list: https://stat.ethz.ch/mailman/listinfo/r-package-devel
+    * R Mailing list posting guide: https://www.r-project.org/posting-guide.html
+    * But I don't know how to search the archives (besides https://stat.ethz.ch/pipermail/r-package-devel/), and don't know why it's not listed on Nabble: http://r.789695.n4.nabble.com/R-f789695.subapps.html.
+* `rdevtools` Google Group: https://groups.google.com/forum/?utm_source=digest&utm_medium=email#!forum/rdevtools/topics
+    * But most of the types of questions here seemed to have moved to the 'R-package-devel' list, that's officially supported by R developers.
