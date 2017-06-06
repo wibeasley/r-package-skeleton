@@ -5,6 +5,7 @@
 # Session Data files
 .RData
 
+# Blaine added this comment line.
 # Example code in package build process
 *-Ex.R
 
