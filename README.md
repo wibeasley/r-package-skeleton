@@ -4,7 +4,6 @@
 
 This is for a 2017 SCUG class scheduled for two 1-hour SCUG meetings.
 
-
 Creating a minimal R package: initializing package skeleton
 ===========
 
