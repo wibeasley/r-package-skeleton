@@ -2,15 +2,17 @@
 % Please edit documentation in R/integer-addition.R
 \name{integer_addition}
 \alias{integer_addition}
-\title{adds two integers}
+\title{adds three, three integers, AH! AH! AH!}
 \usage{
-integer_addition(a, b)
+integer_addition(a, b, c)
 }
 \arguments{
 \item{a}{first integer}
 
 \item{b}{second integer}
+
+\item{c}{third integer}
 }
 \description{
-Adding two numbers
+Adding three numbers
 }
