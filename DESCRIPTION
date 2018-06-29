@@ -4,9 +4,7 @@ Description: Reusable functions for calculating exposure during repeated spans.
 Version: 0.0.1.9000
 Date: 2017-02-21
 Authors@R: c(person("Will", "Beasley", role = c("aut", "cre"), email =
-    "wibeasley@hotmail.com"))
-Author: Will Beasley [aut, cre]
-Maintainer: Will Beasley <wibeasley@hotmail.com>
+    "wibeasley@hotmail.com", comment = c(ORCID = "0000-0002-5613-5006")))
 URL: https://github.com/wibeasley/r-package-skeleton, http://ouhsc.edu/bbmc/
 BugReports: https://github.com/wibeasley/r-package-skeleton/issues
 Depends:
